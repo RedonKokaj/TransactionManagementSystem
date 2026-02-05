@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.banking.transactionmanagementsystem.ui.controller.RegisterController">
+
+    <Label text="Register" style="-fx-font-size: 20px;" />
+
+    <TextField fx:id="nameField" promptText="Name"/>
+    <TextField fx:id="surnameField" promptText="Surname"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <DatePicker fx:id="birthDatePicker"/>
+
+    <Button text="Register" onAction="#register"/>
+    <Button text="Back" onAction="#onBack"/>
+
+    <Label fx:id="messageLabel"/>
+
+</VBox>

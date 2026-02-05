@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.banking.transactionmanagementsystem.ui.controller.AccountsController">
+
+    <Label text="Your Accounts" />
+
+    <ListView fx:id="accountsListView" prefWidth="300" prefHeight="200"/>
+
+    <Button text="Create new account"
+            onAction="#onCreateAccount"/>
+
+    <Button text="Logout" onAction="#logout"/>
+
+</VBox>
